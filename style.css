@@ -1,0 +1,25 @@
+img{
+    width: 400px; 
+  }
+div{
+      font-size: x-large; font-family: fantasy; width: 400px;
+  }
+
+body {
+    background-color: bisque;
+  }
+
+a{
+    color: rgb(255, 0, 0);
+    }
+#blk-id {
+    background-color: blueviolet;
+    }
+.block{
+    background-color:beige;
+    border-radius: 10px;
+    padding: 10px 10px 10px 30px;
+}
+.block p{
+    width: 100%;
+}
