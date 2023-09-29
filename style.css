@@ -1,25 +1,42 @@
 img{
     width: 400px; 
+    border-radius: 30px;
   }
+img:hover{
+    width: 600px;
+    height: 500px;
+}
 div{
       font-size: x-large; font-family: fantasy; width: 400px;
   }
 
 body {
     background-color: bisque;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    flex-wrap: wrap;
+
   }
 
 a{
     color: rgb(255, 0, 0);
     }
-#blk-id {
-    background-color: blueviolet;
-    }
+a:hover{
+    color: blue;
+}
 .block{
     background-color:beige;
-    border-radius: 10px;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 15px 10px 15px;
 }
 .block p{
     width: 100%;
+}
+.block-hover a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+}
+.block-hover a:hover{
+    text-decoration: underline;
 }
