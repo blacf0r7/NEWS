@@ -1,76 +1,95 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-
+  box-sizing: border-box;
+  margin: 0;
 }
 /*верхушка (панель уроавления)*/
-.header{
-    height: 50px;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
-
-
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  /* position: fixed; */
 }
-nav{
-    display: flex;
-    font-size: large;
-     font-family: fantasy; 
-     width: 250px;
-     gap: 60px;
-     transition: 0.5s;
+nav {
+  display: flex;
+  font-size: large;
+  font-family: fantasy;
+  width: 250px;
+  gap: 60px;
+  transition: 0.5s;
+}
+nav a {
+  text-decoration: none;
+  color: peachpuff;
+}
+.logo1 {
+  height: 100%;
+}
 
+/* кликер, прикол с картинкой выплывающей */
+.label img {
+  position: absolute;
+  top: 6px;
+  right: 60px;
+  width: 5%;
+  height: 5%;
+  border-radius: 45%;
 }
-nav a{
-    text-decoration: none;
-    color: aliceblue;
+.hidden-block {
+  /* display: none; */
+  opacity: 0;
+  transition: 1s;
+  width: 0px;
+  height: 0px;
 }
-.logo1{
-    height: 100%;
+#check {
+  display: none;
+}
+#check:checked ~ .hidden-block {
+  /* display: block; */
+  opacity: 100%;
 }
 
 /*основной текст*/
-.art-list img{
-    width: 375px; 
-    border-radius: 30px;
-  }
-.art-list img:hover{
-    width: 600px;
-    height: 500px;
+.art-list img {
+  width: 375px;
+  border-radius: 30px;
 }
-div{
-      font-size: x-large; 
-      font-family: fantasy; 
-      width: 400px;
-  }
+.art-list img:hover {
+  width: 600px;
+  height: 500px;
+}
+div {
+  font-size: x-large;
+  font-family: fantasy;
+  width: 400px;
+}
 html,
 body {
-    height: 100%;
-    width: 100%;
-    background-color: aliceblue;
-   
-  }
-.art-list{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
+  height: 100%;
+  width: 100%;
+  background-color: peachpuff;
 }
-.art-list a{
-    color: rgb(255, 0, 0);
-    }
-.art-list a:hover{
-    color: blue;
+.art-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.block{
-    
-    padding: 10px 15px 10px 15px;
+.art-list a {
+  color: rgb(255, 0, 0);
 }
-.block p{
-    width: 100%;
+.art-list a:hover {
+  color: blue;
+}
+.block {
+  padding: 10px 15px 10px 15px;
+}
+.block p {
+  width: 100%;
 }
